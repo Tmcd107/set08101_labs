@@ -1,0 +1,226 @@
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /
+$ cd /c/CyberSecurityYear2/Trimester2/WebTech
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech
+$ pwd
+/c/CyberSecurityYear2/Trimester2/WebTech
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech
+$ ls
+PortableGit/  Week1/  Week2/  set08101/
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech
+$ cd set08101
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101
+$ ls
+set08101_labs/
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101
+$ cd ..
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech
+$ git clone https://github.com/Tmcd107/set08101_labs.git
+Cloning into 'set08101_labs'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech
+$ ls
+PortableGit/  Week1/  Week2/  set08101_labs/
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech
+$ cd set08101_labs
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git ls
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ ls
+hello.html.txt
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git mv hello.html.txt hello.html
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ ls
+hello.html
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ status
+bash: status: command not found
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    hello.html.txt -> hello.html
+
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git commit -m "renamed file"
+[main 5c2590a] renamed file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename hello.html.txt => hello.html (100%)
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (2/2), 230 bytes | 230.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Tmcd107/set08101_labs.git
+   6756150..5c2590a  main -> main
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        week1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git add .
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   week1/WebTechNotes.docx
+        new file:   week1/hello.html
+
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git commit -m "Added week1"
+[main ff414a4] Added week1
+ 2 files changed, 8 insertions(+)
+ create mode 100644 week1/WebTechNotes.docx
+ create mode 100644 week1/hello.html
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 248.72 KiB | 22.61 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Tmcd107/set08101_labs.git
+   5c2590a..ff414a4  main -> main
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ cd /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ ls
+hello.html  week1/  week2/
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        week2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git add .
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git commit -m "Added week2"
+[main 237c29c] Added week2
+ 7 files changed, 106 insertions(+)
+ create mode 100644 week2/BasicHTMLelements.html
+ create mode 100644 week2/HTMLDocuments.html
+ create mode 100644 week2/HyperText.html
+ create mode 100644 week2/linksbetweenlocalpages/01.html
+ create mode 100644 week2/linksbetweenlocalpages/02.html
+ create mode 100644 week2/linksbetweenlocalpages/index.html
+ create mode 100644 week2/vmask.jpg
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 6.40 KiB | 1.28 MiB/s, done.
+Total 11 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Tmcd107/set08101_labs.git
+   ff414a4..237c29c  main -> main
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
+$ git log
+commit 237c29cc50d1cff6ba7b5c294fcd5f12540315ad (HEAD -> main, origin/main, origin/HEAD)
+Author: Thomas <tmcd107@gmail.com>
+Date:   Mon Jan 31 12:03:26 2022 +0000
+
+    Added week2
+
+commit ff414a480dda09c69f30130ebf42c8a9b249fb58
+Author: Thomas <tmcd107@gmail.com>
+Date:   Mon Jan 31 11:54:48 2022 +0000
+
+    Added week1
+
+commit 5c2590aff591216290bf8172fced840572ef043d
+Author: Thomas <tmcd107@gmail.com>
+Date:   Mon Jan 31 11:44:58 2022 +0000
+
+    renamed file
+
+commit 6756150a0895a87c5f6a6483594091ec3da294ce
+Author: Thomas <tmcd107@gmail.com>
+Date:   Sun Jan 23 14:34:47 2022 +0000
+
+    a commit message
+
+Tmcd1@LAPTOP-BVPEH4C2 MINGW64 /c/CyberSecurityYear2/Trimester2/WebTech/set08101_labs (main)
