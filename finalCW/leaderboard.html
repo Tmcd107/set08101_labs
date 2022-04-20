@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="leaderboard.css" type="text/css" />
+    <title>NFL Quiz</title>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <img id="main__img" src="NFL_Quiz_Logo.png" />
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="easyquiz.html" class="navbar__links">Quiz 1</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="meduimquiz.html" class="navbar__links">Quiz 2</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="hardquiz.html" class="navbar__links">Quiz 3</a>
+                </li>
+                <li class="navbar__btn"><a href="leaderboard.html" class="button">LeaderBoard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <body>
+        <div class="container">
+            <div id="highScores" class="flex-center flex-column">
+                <h1 id="finalScore">Quiz 1 LeaderBoard</h1>
+                <ul id="highScoresList"></ul>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container2">
+            <div id="highScores2" class="flex-center flex-column">
+                <h1 id="finalScore2">Quiz 2 LeaderBoard</h1>
+                <ul id="highScoresList2"></ul>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container3">
+            <div id="highScores3" class="flex-center flex-column">
+                <h1 id="finalScore3">Quiz 3 LeaderBoard</h1>
+                <ul id="highScoresList3"></ul>
+            </div>
+        </div>
+
+        <script src="leaderboard.js"></script>
+
+    </body>
+
+</html>

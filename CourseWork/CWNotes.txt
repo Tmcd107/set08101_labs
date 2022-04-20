@@ -1,0 +1,261 @@
+https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click
+
+https://stackoverflow.com/questions/1878264/how-do-i-make-an-html-button-not-reload-the-page
+
+https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+
+
+
+
+HTML
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8" />
+      <link rel="stylesheet" href="leaderboard.css" type="text/css"/>
+      <title>NFL Quiz</title>
+   </head>
+   <body>
+    <nav>
+        <a href="/My Course/" target "_blank">My Course</a> |
+        <a href="C:\CyberSecurityYear2\Trimester2\WebTech\set08101_labs\week3\MyCarrerAtNapier\aboutMe.html" target "_blank">About Me</a> |
+     </nav>
+     <section>
+        <h1>leaderboard Page</h1>
+    <div class="leaderboard">
+        <p class="leaderboardname">Bob</p>
+        <p class="score">15000</p>
+    </div>
+
+    <div class="leaderboard">
+        <p class="leaderboardname">Jane</p>
+        <p class="score">12000</p>
+    </div>
+</body>
+</html>
+
+CSS
+
+h1 {text-align: center;}
+
+.leaderboard {
+    background: #ededed;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 60px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leaderboardname {
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+    text-decoration: bold;
+  }
+
+
+easyquiz#############################################################
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "UTF-8" />
+      <link rel="stylesheet" href="easyquiz.css" type="text/css"/>
+      <title>NFL Quiz</title>
+   </head>
+   <body>
+      <header>
+         <img class="logo" src="NFL_Quiz_Logo.png" alt="logo">
+         <nav>
+             <ul class="nav_links">
+                 <li><a href="home.html" target "_blank">Home Page</a></li>
+                 <li><a href="easyquiz.html" target "_blank">Quiz 1</a></li>
+                 <li><a href="meduimquiz.html" target "_blank">Quiz 2</a></li>
+                 <li><a href="hardquiz.html" target "_blank">Quiz 3</a></li>
+             </ul>
+         </nav>
+         <a href="leaderboard.html" href="leaderboard.html"><button>LeaderBoard</button></a>
+     </header>
+      <section>
+         <h1>Quiz 1</h1>
+         </hgroup>
+         <form action="/easyquiz" method="get" id="easyquizform">
+             <fieldset>
+             <p>Q1) What were the 2 teams that took part in the 2022 super bowl?</p>
+             <input type="radio" id="rams and bengals" name="2superbowlteams" value="rams and bengals">
+             <label for="rams and bengals">Los Angeles Rams and the Cincinnati Bengals</label><br>
+             <input type="radio" id="chiefs and 49ers" name="2superbowlteams" value="chiefs and 49ers">
+             <label for="chiefs and 49ers">Kansas City Chiefs and the San Francisco 49ers</label><br>
+             <input type="radio" id="eagles and patriots" name="2superbowlteams" value="eagles and patriots">
+             <label for="eagles and patriots">Philadelphia Eagles and the New England Patriots</label><br>
+             <input type="radio" id="rams and patriots" name="2superbowlteams" value="rams and patriots">
+             <label for="rams and patriots">Los Angeles Rams and the New England Patriots</label><br>
+
+            <br>
+
+            <p>Q2)  How many points are allotted for a touchdown?</p>
+            <input type="radio" id="7" name="touchdown points" value="7">
+            <label for="7">7</label><br>
+            <input type="radio" id="6" name="touchdown points" value="6">
+            <label for="6">6</label><br>
+            <input type="radio" id="10" name="touchdown points" value="10">
+            <label for="10">10</label><br>
+            <input type="radio" id="4" name="touchdown points" value="4">
+            <label for="4">4</label><br>
+
+            <br>
+
+            <p>Q3)  What does the game start with?</p>
+            <input type="radio" id="starts at 50 yard line" name="gamestartwith" value="starts at 50 yard line">
+            <label for="starts at 50 yard line">the team that wins the coin toss start the offensive drive at the 50 yard line</label>
+            <br>
+            <input type="radio" id="starts at 25 yard line" name="gamestartwith" value="starts at 25 yard line">
+            <label for="starts at 25 yard line">the team that wins the coin toss start the offensive drive at their own 25 yard line</label>
+            <br>
+            <input type="radio" id="starts at 20 yard line" name="gamestartwith" value="starts at 20 yard line">
+            <label for="starts at 20 yard line">the team that wins the coin toss start the offensive drive at their own 20 yard line</label>
+            <br>
+            <input type="radio" id="losing team kicks the ball" name="gamestartwith" value="losing team kicks the ball">
+            <label for="losing team kicks the ball">the team that loses the coin toss start the game by a kick-off to the other team</label><br>
+            
+            <br>
+
+            <p>Q4)  What happens if both teams end up in a tie?</p>
+            <input type="radio" id="end game a tie" name="tiegame" value="end game a tie">
+            <label for="end game a tie">The game ends anyway</label><br>
+            <input type="radio" id="first team score" name="tiegame" value="first team score">
+            <label for="first team score">The first team to score wins the game</label><br>
+            <input type="radio" id="another quater played" name="tiegame" value="another quater played">
+            <label for="another quater played">The game goes on for another quater</label><br>
+            <input type="radio" id="another 2 quaters played" name="tiegame" value="another 2 quater played">
+            <label for="another 2 quater played">The game goes on for another 2 quaters</label><br>
+
+            <br>
+
+            <p>Q5)  When does a face-mask penalty occur</p>
+            <input type="radio" id="takes helmet off" name="face-mask" value="takes helmet off">
+            <label for="takes helmet off">The player takes their own helmet off during a play</label><br>
+            <input type="radio" id="no helmet to start" name="face-mask" value="no helmet to start">
+            <label for="no helmet to start">The game has started but a player has not got a helmet on</label><br>
+            <input type="radio" id="enemy team grabs helmet" name="face-mask" value="enemy team grabs helmet">
+            <label for="enemy team grabs helmet">When a player grabs an opposing team helmets</label><br>
+            <input type="radio" id="broken helmet" name="face-mask" value="broken helmet">
+            <label for="broken helmet">The player knows but still plays with a broken helmet</label><br>
+
+            <br>
+
+            <p>Q6)  How long is the football field?</p>
+            <input type="radio" id="50" name="field length" value="50">
+            <label for="50">50 yards</label><br>
+            <input type="radio" id="100" name="field length" value="100">
+            <label for="100">100 yards</label><br>
+            <input type="radio" id="150" name="field length" value="150">
+            <label for="150">150 yards</label><br>
+            <input type="radio" id="200" name="field length" value="200">
+            <label for="200">200 yards</label><br>
+
+            <br>
+
+            <p>Q7)  What is an interception?</p>
+            <input type="radio" id="opposing team catches the ball" name="meaning of interception" value="opposing team catches the ball">
+            <label for="opposing team catches the ball">When a member of the opposing team catches the ball</label><br>
+            <input type="radio" id="teamplayer catches by deflection" name="meaning of interception" value="teamplayer catches by deflection">
+            <label for="teamplayer catches by deflection">When a player on the same team catches the ball after it had a deflection from the opposing team</label><br>
+            <input type="radio" id="opposing team gets the ball from loss of possesion" name="meaning of interception" value="opposing team gets the ball from loss of possesion">
+            <label for="opposing team gets the ball from loss of possesion">When a member of the opposing team picks up the lose ball on the ground from a loss of possesion </label><br>
+            <input type="radio" id="when ball is purposely thrown away" name="meaning of interception" value="when ball is purposely thrown away">
+            <label for="when ball is purposely thrown away">When the Qb purposely throws the ball away off the field</label><br>
+
+            <br>
+
+            <p>Q8)  What country is the NFL located in?</p>
+            <input type="radio" id="Canada" name="NFL country in" value="Canada">
+            <label for="Canada">Canada</label><br>
+            <input type="radio" id="Brazil" name="NFL country in" value="Brazil">
+            <label for="Brazil">Brazil</label><br>
+            <input type="radio" id="United States of America" name="NFL country in" value="United States of America">
+            <label for="United States of America">United States of America</label><br>
+            <input type="radio" id="Argentina" name="NFL country in" value="Argentina">
+            <label for="Argentina">Argentina</label><br>
+
+            <br>
+
+            <p>Q9)  What does the NFL stand for in American Football?</p>
+            <input type="radio" id="National Federation of the Football League" name="NFL stand for" value="National Federation of the Football League">
+            <label for="National Federation of the Football League">National Federation of the Football League</label><br>
+            <input type="radio" id="National Federation League" name="NFL stand for" value="National Federation League">
+            <label for="National Federation League">National Federation League</label><br>
+            <input type="radio" id="National Football League" name="NFL stand for" value="National Football League">
+            <label for="National Football League">National Football League</label><br>
+            <input type="radio" id="Npower Football League" name="NFL stand for" value="Npower Football League">
+            <label for="Npower Football League">Npower Football League</label><br>
+
+            <br>
+
+            <p>Q10) When does the halftime show take part?</p>
+            <input type="radio" id="halfway through the 4th" name="haftime show part" value="halfway through the 4th">
+            <label for="halfway through the 4th">halfway through the 4th quater</label><br>
+            <input type="radio" id="halfway through the 3rd" name="haftime show part" value="halfway through the 3rd">
+            <label for="halfway through the 3rd">halfway through the 3rd quater</label><br>
+            <input type="radio" id="between the end of 2nd and start of the 3rd" name="haftime show part" value="between the end of 2nd and start of the 3rd">
+            <label for="between the end of 2nd and start of the 3rd">between the end of the 2nd and start of the 3rd quater</label><br>
+            <input type="radio" id="halfway through the 2nd" name="haftime show part" value="halfway through the 2nd">
+            <label for="halfway through the 2nd">halfway through the 2nd quater</label><br>
+        
+        </fieldset>
+        </form>
+        <div class="container">
+            <div class="btn-holder">
+                <button type="button" class="block" form="easyquizform" value="submit answers">submit</button>
+                
+             </div>
+            </div>
+      </section>
+   </body>
+</html>
+
+easyquiz css############################################################################
+
+
+.radio-label{
+    margin-right: 10%;
+}
+
+
+fieldset{
+    margin-left: 100px;
+    border: 0;
+}
+
+.container {
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+}
+
+.container .btn-holder {
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .block{
+    display: block;
+    width: 20%;
+    border: none;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+

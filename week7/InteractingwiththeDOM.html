@@ -1,0 +1,110 @@
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="code.js"></script>
+        <title>SET08101 - Interacting with the DOM</title>
+    </head>
+    <body>
+        <p> <a href="#" onClick="addMessage() ;">Click Me</a></p>
+        <h1>OUTPUT:</h1>
+        <p id="outputDemo"></p>
+        <script>
+            function addMessage() {
+                document.getElementById("outputDemo").innerHTML = "HELLO WORLD"
+            }
+        </script>
+    </body>
+</html>
+-->
+
+<!--
+OR
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="code.js"></script>
+        <title>SET08101 - Interacting with the DOM</title>
+    </head>
+    <body>
+        <p> <a href="#" onClick="addMessage() ;">Click Me</a></p>
+        <h1>OUTPUT:</h1>
+        <div id="outputDemo"></div>
+        <script>
+            function addMessage() {
+                document.getElementById("outputDemo").innerHTML = "<p>HELLO WORLD</p>"
+            }
+        </script>
+    </body>
+</html>
+-->
+
+<!--
+OR
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="code.js"></script>
+        <title>SET08101 - Interacting with the DOM</title>
+    </head>
+    <body>
+        <p> <a href="#" onClick="addMessage() ;">Click Me</a></p>
+        <h1>OUTPUT:</h1>
+        <div id="outputDemo"></div>
+        <script>
+            function addMessage() {
+                document.getElementById("outputDemo").innerHTML += "<p>HELLO WORLD</p>"
+            }
+        </script>
+    </body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            p {color: red;}
+        </style>
+        <title>SET08101 - Interacting with the DOM</title>
+    </head>
+    <body>
+        <p> <a href="#" onClick="addMessage() ;">Click Me</a></p>
+        <h1>OUTPUT:</h1>
+        <p id="redPara">I am RED</p>
+        <script>
+            function addMessage() {
+                document.getElementById("redPara").style.color = "red";
+            }
+        </script>
+    </body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            p {color: red;}
+        </style>
+        <title>SET08101 - Interacting with the DOM</title>
+    </head>
+    <body>
+        <p> <a href="#" onClick="colorChanger() ;">Click Me</a></p>
+        <h1>OUTPUT:</h1>
+        <p id="redPara">I am RED</p>
+        <script>
+            var current="red";
+            function colorChanger() {
+                if(current === "red")
+                    current = "blue";
+                else
+                    current = "red";
+                document.getElementById("redPara").style.color = current;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="easyquiz.css" type="text/css" />
+    <script src="easyquiz.js"></script>
+    <title>NFL Quiz</title>
+</head>
+
+<body>
+    <header>
+        <a href="home.html">
+            <img src="NFL_Quiz_Logo.png" style="width: 300px; height: 100px;">
+        </a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="home.html" target "_blank">Home Page</a></li>
+                <li><a href="easyquiz.html" target "_blank">Quiz 1</a></li>
+                <li><a href="meduimquiz.html" target "_blank">Quiz 2</a></li>
+                <li><a href="hardquiz.html" target "_blank">Quiz 3</a></li>
+            </ul>
+        </nav>
+        <a href="leaderboard.html" href="leaderboard.html"><button>LeaderBoard</button></a>
+    </header>
+    <section>
+        <h1>Quiz 1</h1>
+        <div id="frame001">
+            <div id="center001">
+
+
+                <br>
+                <p id="message001"></p>
+                <p id="options001"></p>
+                <p id="comment001"></p>
+                <p id="click001"></p>
+                <p id="click002"></p>
+            </div>
+        </div>
+
+        <script>
+            var question001 = ["What were the 2 teams that took part in the 2022 super bowl?"];
+            var choices001 = ["<input onclick=correct001() name=button001 type=radio />Los Angeles Rams and the Cincinnati Bengals<br /><input onclick=incorrect001() name=button001 type=radio />Kansas City Chiefs and the San Francisco 49ers<br /><input onclick=incorrect001() name=button001 type=radio />Philadelphia Eagles and the New England Patriots<br /><input onclick=incorrect001() name=button001 type=radio />Los Angeles Rams and the New England Patriots<br />"];
+
+            var question002 = ["How many points are allotted for a touchdown?"];
+            var choices002 = ["<input onclick=incorrect002() name=button002 type=radio />7<br /><input onclick=correct002() name=button002 type=radio />6<br /><input onclick=incorrect002() name=button002 type=radio />10<br /><input onclick=incorrect002() name=button002 type=radio />4<br />"];
+
+            var question003 = ["What does the game start with?"];
+            var choices003 = ["<input onclick=incorrect003() name=button003 type=radio />the team that wins the coin toss start the offensive drive at the 50 yard line<br /><input onclick=incorrect003() name=button003 type=radio />the team that wins the coin toss start the offensive drive at their own 25 yard line<br /><input onclick=incorrect003() name=button003 type=radio />the team that wins the coin toss start the offensive drive at their own 20 yard line<br /><input onclick=correct003() name=button003 type=radio />the team that loses the coin toss start the game by a kick-off to the other team<br />"];
+
+            var question004 = ["What happens if both teams end up in a tie?"];
+            var choices004 = ["<input onclick=incorrect004() name=button004 type=radio />The game ends anyway<br /><input onclick=incorrect004() name=button004 type=radio />The first team to score wins the game<br /><input onclick=correct004() name=button004 type=radio />The game goes on for another quater<br /><input onclick=incorrect004() name=button004 type=radio />The game goes on for another 2 quaters<br />"];
+
+            var question005 = ["When does a face-mask penalty occur?"];
+            var choices005 = ["<input onclick=incorrect005() name=button005 type=radio />The player takes their own helmet off during a play<br /><input onclick=incorrect005() name=button005 type=radio />The game has started but a player has not got a helmet on<br /><input onclick=correct005() name=button005 type=radio />When a player grabs an opposing team helmets<br /><input onclick=incorrect005() name=button005 type=radio />The player knows but still plays with a broken helmet<br />"];
+
+            var question006 = ["How long is the football field?"];
+            var choices006 = ["<input onclick=incorrect006() name=button006 type=radio />50 yards<br /><input onclick=correct006() name=button006 type=radio />100 yards<br /><input onclick=incorrect006() name=button006 type=radio />150 yards<br /><input onclick=incorrect006() name=button006 type=radio />200 yards<br />"];
+
+            var question007 = [" What is an interception?"];
+            var choices007 = ["<input onclick=correct007() name=button007 type=radio />When a member of the opposing team catches the ball<br /><input onclick=incorrect007() name=button007 type=radio />When a player on the same team catches the ball after it had a deflection from the opposing team<br /><input onclick=incorrect007() name=button007 type=radio />When a member of the opposing team picks up the lose ball on the ground from a loss of possesion<br /><input onclick=incorrect007() name=button007 type=radio />When the Qb purposely throws the ball away off the field<br />"];
+
+            var question008 = ["What country is the NFL located in?"];
+            var choices008 = ["<input onclick=incorrect008() name=button008 type=radio />Canada<br /><input onclick=incorrect008() name=button008 type=radio />Brazil<br /><input onclick=correct008() name=button008 type=radio />United States of America<br /><input onclick=incorrect008() name=button008 type=radio />Argentina<br />"]
+
+            var question009 = [" What does the NFL stand for in American Football?"];
+            var choices009 = ["<input onclick=incorrect009() name=button009 type=radio />National Federation of the Football League<br /><input onclick=incorrect009() name=button009 type=radio />National Federation League<br /><input onclick=correct009() name=button009 type=radio />National Football League<br /><input onclick=incorrect009() name=button009 type=radio />Npower Football League<br />"];
+
+            var question010 = ["When does the halftime show take part?"];
+            var choices010 = ["<input onclick=incorrect010() name=button010 type=radio />halfway through the 4th quater<br /><input onclick=incorrect010() name=button010 type=radio />halfway through the 3rd quater<br /><input onclick=correct010() name=button010 type=radio />between the end of the 2nd and start of the 3rd quater<br /><input onclick=incorrect010() name=button010 type=radio />halfway through the 2nd quater<br />"];
+        </script>
+</body>
+
+</html>
