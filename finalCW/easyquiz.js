@@ -182,7 +182,7 @@ function set010(){
 	j = 0;
 	message001.innerHTML = question010;
 	options001.innerHTML = choices010;
-	click001.innerHTML = "<button onclick=result001()>Score</button>";
+	click001.innerHTML = "<button class = 'scorebtn' onclick=result001()>Score</button>";
 }
 
 function correct010() {
@@ -200,46 +200,66 @@ function result001() {
 	comment001.innerHTML = "Your score is: " + z+"/10";
 
 	if (a == 0) {
-		comment001.innerHTML += "<br/>" + wronga + "<br/>" + question001 + "<br/>" + "The correct answer was:<br/>" + correctanswera;
+		comment001.innerHTML += `<div class= "resultsquestion">${wronga} </div>
+		<p class = "questioninfo">${question001}</p> 
+		<p class = "answertext">${correctanswera}</p> `
 	}
 
 	if (b == 0) {
-		comment001.innerHTML += "<br/>" + wrongb  + "<br/>" + question002 + "<br/>" + "The correct answer was:<br/>" + correctanswerb;
+		comment001.innerHTML += `<div class= "resultsquestion">${wrongb} </div>
+		<p class = "questioninfo">${question002}</p> 
+		<p class = "answertext">${correctanswerb}</p> `
 	}
 
 	if (c == 0) {
-		comment001.innerHTML += "<br/>" + wrongc  + "<br/>" + question003 + "<br/>" + "The correct answer was:<br/>" + correctanswerc;
+		comment001.innerHTML += `<div class= "resultsquestion">${wrongc} </div>
+		<p class = "questioninfo">${question003}</p> 
+		<p class = "answertext">${correctanswerc}</p> `
 	}
 
 	if (d == 0) {
-		comment001.innerHTML += "<br/>" + wrongc  + "<br/>" + question004 + "<br/>" + "The correct answer was:<br/>" + correctanswerd;
+		comment001.innerHTML += `<div class= "resultsquestion">${wrongd} </div>
+		<p class = "questioninfo">${question004}</p> 
+		<p class = "answertext">${correctanswerd}</p> `
 	}
 
 	if (e == 0) {
-		comment001.innerHTML += "<br/>" + wrongc  + "<br/>" + question005 + "<br/>" + "The correct answer was:<br/>" + correctanswere;
+		comment001.innerHTML += `<div class= "resultsquestion">${wronge} </div>
+		<p class = "questioninfo">${question005}</p> 
+		<p class = "answertext">${correctanswere}</p> `
 	}
 
 	if (f == 0) {
-		comment001.innerHTML += "<br/>" + wrongc  + "<br/>" + question006 + "<br/>" + "The correct answer was:<br/>" + correctanswerf;
+		comment001.innerHTML += `<div class= "resultsquestion">${wrongf} </div>
+		<p class = "questioninfo">${question006}</p> 
+		<p class = "answertext">${correctanswerf}</p> `
 	}
 
 	if (g == 0) {
-		comment001.innerHTML += "<br/>" + wrongc  + "<br/>" + question007 + "<br/>" + "The correct answer was:<br/>" + correctanswerg;
+		comment001.innerHTML += `<div class= "resultsquestion">${wrongg} </div>
+		<p class = "questioninfo">${question007}</p> 
+		<p class = "answertext">${correctanswerg}</p> `
 	}
 
 	if (h == 0) {
-		comment001.innerHTML += "<br/>" + wrongc  + "<br/>" + question008 + "<br/>" + "The correct answer was:<br/>" + correctanswerh;
+		comment001.innerHTML += `<div class= "resultsquestion">${wrongh} </div>
+		<p class = "questioninfo">${question008}</p> 
+		<p class = "answertext">${correctanswerh}</p> `
 	}
 
 	if (i == 0) {
-		comment001.innerHTML += "<br/>" + wrongc  + "<br/>" + question009 + "<br/>" + "The correct answer was:<br/>" + correctansweri;
+		comment001.innerHTML += `<div class= "resultsquestion">${wrongi} </div>
+		<p class = "questioninfo">${question009}</p> 
+		<p class = "answertext">${correctansweri}</p> `
 	}
 
 	if (j == 0) {
-		comment001.innerHTML += "<br/>" + wrongc  + "<br/>" + question010 + "<br/>" + "The correct answer was:<br/>" + correctanswerj;
+		comment001.innerHTML += `<div class= "resultsquestion">${wrongj} </div>
+		<p class = "questioninfo">${question010}</p> 
+		<p class = "answertext">${correctanswerj}</p> `
 	}
 
-	click001.innerHTML = "<button onclick=repeat001()>Repeat</button>";
+	click001.innerHTML = '<button class = "rptbutton" onclick=repeat001()>Repeat</button>'
 }
 
 function repeat001() {

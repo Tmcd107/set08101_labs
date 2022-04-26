@@ -27,7 +27,7 @@
                     <a href="easyquiz.html" class="navbar__links">Quiz 1</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Quiz 3</a>
+                    <a href="meduimquiz.html" class="navbar__links">Quiz 2</a>
                 </li>
                 <li class="navbar__btn"><a href="leaderboard.html" class="button">LeaderBoard</a></li>
             </ul>
@@ -110,7 +110,7 @@
             <input type="radio" id="name" name="question10" value="dan">Dan Marino & the dolphins <br>
 
 
-            <input id="button" type="button" value="check" onclick="check()">
+            <input class="chkbutton" id="button" type="button" value="Check Your Answers" onclick="check()">
         </form>
 
         <div id="after_submit">
@@ -118,8 +118,6 @@
         </div>
 
     </div>
-    <link rel="stylesheet" href="popup.css" type="text/css" />
-    <!--<script src="popup.js"></script>-->
     <button class="signupbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Click here to save your score on the leaderboard</button>
 
     <div id="id01" class="modal">
@@ -140,9 +138,6 @@
                 <label>
                     <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
                 </label>
-
-                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
-                </p>
             </div>
         </form>
 

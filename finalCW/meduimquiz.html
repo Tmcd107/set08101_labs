@@ -36,14 +36,20 @@
     <div class="container">
         <h1>Quiz 2</h1>
         <form id="quiz" name="quiz">
-            <img src="tombrady.jpg" width="300px;" height="200px" ;>
 
-            <p>1. Who is this player?</p>
-            <input type="radio" id="tom" name="question1" value="tombrady">Tom Brady<br>
-            <input type="radio" id="tom" name="question1" value="DrewBrees">Drew Brees<br>
-            <input type="radio" id="tom" name="question1" value="MattRyan">Matt Ryan<br>
-            <input type="radio" id="tom" name="question1" value="DakPrescott">Dak Prescott<br>
+            <p>1. Who is tom brady?</p>
+            <div class="container">
+                <div id="q1option1">
+                    <input type='button' id='btn1' onclick="q1option1()">
+                    <input type='button' id='btn2' onclick="q1option2()">
+                    <input type='button' id='btn3' onclick="q1option3()">
+                    <input type='button' id='btn4' onclick="q1option4()">
+                </div>
+            </div>
 
+
+
+            <br>
             <img src="newyork.jpg" width="300px;" height="200px" ;>
             <p>2. What teams staduim is this?</p>
             <input type="radio" id="newyork" name="question2" value="newEngland">new England<br>
@@ -51,6 +57,7 @@
             <input type="radio" id="newyork" name="question2" value="newyork">New York<br>
             <input type="radio" id="newyork" name="question2" value="dallas">cowboys<br>
 
+            <br>
             <img src="mike.jpg" width="200px;" height="300px" ;>
             <p>3. Whos head coach is this?</p>
             <input type="radio" id="dallas" name="question3" value="dallas">cowboys<br>
@@ -58,13 +65,18 @@
             <input type="radio" id="dallas" name="question3" value="newyork">49ers<br>
             <input type="radio" id="dallas" name="question3" value="newEngland">new England<br>
 
-            <img src="donald.jpg" width="300px;" height="200px" ;>
-            <p>4. Who is this player?</p>
-            <input type="radio" id="donald" name="question4" value="donald">Aaran Donald<br>
-            <input type="radio" id="donald" name="question4" value="kelce">Jason Kelce<br>
-            <input type="radio" id="donald" name="question4" value="jr">Rodney Hudson Jr<br>
-            <input type="radio" id="donald" name="question4" value="jones">Julio Jones<br>
+            <br>
+            <p>4. Who is Aaran Donald?</p>
+            <div class="container">
+                <div id="q1option1">
+                    <input type='button' id='btn5' onclick="q4option1()">
+                    <input type='button' id='btn6' onclick="q4option2()">
+                    <input type='button' id='btn7' onclick="q4option3()">
+                    <input type='button' id='btn8' onclick="q4option4()">
+                </div>
+            </div>
 
+            <br>
             <img src="falcons.png" width="300px;" height="200px" ;>
             <p>5. Who team logo is this?</p>
             <input type="radio" id="falcons" name="question5" value="eagles">philadelphia eagles<br>
@@ -72,6 +84,7 @@
             <input type="radio" id="falcons" name="question5" value="sanfran">san francisco 49ers<br>
             <input type="radio" id="falcons" name="question5" value="browns">Cleavland browns<br>
 
+            <br>
             <img src="bears.png" width="300px;" height="200px" ;>
             <p>6. Who team logo is this?</p>
             <input type="radio" id="bears" name="question6" value="chicago">chicago bears<br>
@@ -79,6 +92,7 @@
             <input type="radio" id="bears" name="question6" value="sanfran">san francisco 49ers<br>
             <input type="radio" id="bears" name="question6" value="browns">Cleavland browns<br>
 
+            <br>
             <img src="att.jpg" width="300px;" height="200px" ;>
             <p>7. What team owns this staduim?</p>
             <input type="radio" id="att" name="question7" value="chicago">chicago bears<br>
@@ -86,13 +100,18 @@
             <input type="radio" id="att" name="question7" value="dallas">Dallas cowboys<br>
             <input type="radio" id="att" name="question7" value="kansas">kansas city chiefs<br>
 
-            <img src="vrabel.jpg" width="300px;" height="200px" ;>
-            <p>8. What team has this head coah?</p>
-            <input type="radio" id="vrabel" name="question8" value="chargers">los angeles chargers<br>
-            <input type="radio" id="vrabel" name="question8" value="saints">new orlean saints<br>
-            <input type="radio" id="vrabel" name="question8" value="titans">tennessee titans<br>
-            <input type="radio" id="vrabel" name="question8" value="broncos">Denver Broncos<br>
+            <br>
+            <p>8. Who is the head coach of the tennese titans?</p>
+            <div class="container">
+                <div id="q8option1">
+                    <input type='button' id='btn9' onclick="q8option1()">
+                    <input type='button' id='btn10' onclick="q8option2()">
+                    <input type='button' id='btn11' onclick="q8option3()">
+                    <input type='button' id='btn12' onclick="q8option4()">
+                </div>
+            </div>
 
+            <br>
             <img src="screen.jpg" width="300px;" height="200px" ;>
             <p>9. What type of play is this if the dotted player gets the ball?</p>
             <input type="radio" id="screen" name="question9" value="option">option play<br>
@@ -100,6 +119,7 @@
             <input type="radio" id="screen" name="question9" value="screen">screen play<br>
             <input type="radio" id="screen" name="question9" value="pistol">pistol play<br>
 
+            <br>
             <img src="singleback.PNG" width="400px;" height="200px" ;>
             <p>10. What type of formation is this?</p>
             <input type="radio" id="sback" name="question10" value="Iformation">I formation<br>
@@ -108,7 +128,7 @@
             <input type="radio" id="sback" name="question10" value="setback">Single set back<br>
 
 
-            <input id="button" type="button" value="check" onclick="check()">
+            <input class="chkbutton" id="button" type="button" value="Check Your Answers" onclick="check()">
         </form>
 
         <div id="after_submit">
@@ -116,9 +136,8 @@
         </div>
 
     </div>
-    <link rel="stylesheet" href="popup.css" type="text/css" />
-    <!--<script src="popup.js"></script>-->
-    <button class="signupbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Click here to save your score on the leaderboard</button>
+    <button class="signupbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Click
+        here to save your score on the leaderboard</button>
 
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;
@@ -139,8 +158,6 @@
                     <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
                 </label>
 
-                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
-                </p>
             </div>
         </form>
 

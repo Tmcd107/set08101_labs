@@ -90,6 +90,97 @@
   
 /*End of nav bar css*/
 
+/*css for btn options for question1*/
+
+#btn1{
+  background-image:url('tombrady.jpg');
+  background-size: cover;
+  width: 200px;
+  height: 400px;
+}
+
+#btn2{
+background-image:url('drewbrees.jpg');
+background-size: cover;
+width: 200px;
+height: 400px;
+}
+
+#btn3{
+background-image:url('mattryan.jpg');
+background-size: cover;
+width: 200px;
+height: 400px;
+}
+
+#btn4{
+background-image:url('dakpres.jpg');
+background-size: cover;
+width: 200px;
+height: 400px;
+}
+
+/*end of css for question1*/
+/*css for question4 options*/
+#btn5{
+  background-image:url('donald.jpg');
+  background-size: cover;
+  width: 200px;
+  height: 400px;
+}
+
+#btn6{
+background-image:url('kelce.jpg');
+background-size: cover;
+width: 200px;
+height: 400px;
+}
+
+#btn7{
+background-image:url('hudson.jpg');
+background-size: cover;
+width: 200px;
+height: 400px;
+}
+
+#btn8{
+background-image:url('jjones.jpg');
+background-size: cover;
+width: 200px;
+height: 400px;
+}
+/*end of q4 css*/
+/*start of q8 css*/
+#btn9{
+  background-image:url('staley.jpg');
+  background-size: cover;
+  width: 200px;
+  height: 400px;
+}
+
+#btn10{
+background-image:url('allen.jpg');
+background-size: cover;
+width: 200px;
+height: 400px;
+}
+
+#btn11{
+background-image:url('vrabel.jpg');
+background-size: cover;
+width: 200px;
+height: 400px;
+}
+
+#btn12{
+background-image:url('hackett.jpg');
+background-size: cover;
+width: 200px;
+height: 400px;
+}
+/*end of q8 css*/
+
+
 body{
     background-color: black;
 }
@@ -102,14 +193,17 @@ body{
 #after_submit {
     visibility: hidden;
 }
-.trafficsign_images{
-    margin-left:50pt;
-}
+
 
 /* Pop up css */
 
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 
 /* Full-width input fields */
@@ -130,8 +224,8 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
-  color: white;
+  background-color: rgb(83, 174, 205);
+  color: black;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -147,7 +241,7 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #f44336;
+  background-color: #f77062;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -159,6 +253,7 @@ button:hover {
 /* Add padding to container elements */
 .container {
   padding: 16px;
+  color: white;
 }
 
 /* The Modal (background) */
@@ -171,14 +266,14 @@ button:hover {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: white;
+  background-color: black;
   padding-top: 50px;
   z-index: 100000 !important;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: black;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
@@ -220,3 +315,12 @@ hr {
   }
 }
 
+
+.chkbutton{
+  background-color: lightblue;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}

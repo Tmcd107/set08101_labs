@@ -135,7 +135,6 @@ body {
 
 * {
   box-sizing: border-box;
-  color: white;
 }
 
 
@@ -158,7 +157,7 @@ input[type=text]:focus, input[type=password]:focus {
 /* Set a style for all buttons */
 button {
   background-color: rgb(83, 174, 205);
-  color: white;
+  color: black;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -186,6 +185,7 @@ button:hover {
 /* Add padding to container elements */
 .container {
   padding: 16px;
+  color: white;
 }
 
 /* The Modal (background) */
@@ -205,7 +205,7 @@ button:hover {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: black;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
@@ -247,3 +247,22 @@ hr {
   }
 }
 
+
+.resultsquestion{
+  margin-top: 40px;
+  width: 400px;
+  color: lightcoral;
+}
+
+.answertext{
+  width: 400px;
+  color: lightgreen;
+}
+
+.rptbutton{
+  width: 400px;
+}
+
+.scorebtn{
+  width: 400px;
+}

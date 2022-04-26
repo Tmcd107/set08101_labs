@@ -1,15 +1,70 @@
 var correct = 0;
+var question1 = ""
+var question4 = ""
+var question8 = ""
+//fot question 1 image select
+
+function q1option1() {
+    question1 = "tombrady";
+}
+
+function q1option2() {
+    question1 = "drebrees";
+}
+
+function q1option3() {
+    question1 = "matt ryan";
+}
+
+function q1option4() {
+    question1 = "Dak prescott";
+}
+
+
+
+
+function q4option1() {
+    question4 = "donald";
+}
+
+function q4option2() {
+    question4 = "kelce";
+}
+
+function q4option3() {
+    question4 = "jr";
+}
+
+function q4option4() {
+    question4 = "jones";
+}
+
+
+function q8option1() {
+    question8 = "staley";
+}
+
+function q8option2() {
+    question8 = "allen";
+}
+
+function q8option3() {
+    question8 = "vrabel";
+}
+
+function q8option4() {
+    question8 = "hackett";
+}
+
+
 
 function check() {
 
-    var question1 = document.quiz.question1.value;
     var question2 = document.quiz.question2.value;
     var question3 = document.quiz.question3.value;
-    var question4 = document.quiz.question4.value;
     var question5 = document.quiz.question5.value;
     var question6 = document.quiz.question6.value;
     var question7 = document.quiz.question7.value;
-    var question8 = document.quiz.question8.value;
     var question9 = document.quiz.question9.value;
     var question10 = document.quiz.question10.value;
 
@@ -42,7 +97,7 @@ function check() {
         correct++;
     }
 
-    if (question8 == "titans") {
+    if (question8 == "vrabel") {
         correct++;
     }
 
